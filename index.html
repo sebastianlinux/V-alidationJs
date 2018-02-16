@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validacion</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+	<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.0.0-beta.4/dist/css/bootstrap-material-design.min.css" integrity="sha384-R80DC0KVBO4GSTw+wZ5x2zn2pu4POSErBkf8/fSFhPXHxvHJydT0CSgAP2Yo2r4I" crossorigin="anonymous">
+	<script src='https://code.jquery.com/jquery-3.2.1.js'></script>
+	<script src='validation.js'></script>
+</head>
+<body>
+	<br/><br/>
+	<div class="container" style="width:30%!important">
+		<div class="row">
+			<div class="col">
+				<form class="form">
+				  	Nombre<input type="text" name='nombre' v-name='nombre' v-only='text'><br/>
+				  	Email<input type="text" name='email' v-name='email' v-only='email'><br/>
+				  	Edad<input type='text' name='edad' v-name='edad' v-only='number'><br/><br/>
+				  	<hr/>
+				  	<b>Seleccione lenguajes</b><br/><br/>
+				  	<input type="checkbox" name="php" v-checkbox='php' value='php'>php<br/>
+				  	<input type="checkbox" name="js"  v-checkbox="js" value='javascript'>javascript<br/>
+				  	<input type="checkbox" name="sass" v-checkbox=sass value='sass'>sass<br/>
+				  	<hr/>	
+				  	<b>seleccione especialidad</b><br/><br/>
+				  	<input type="radio" name='especialidad' v-radio='especialidad' value="web">web<br/>
+				  	<input type="radio" name='especialidad' v-radio='especialidad' value="destop">destop<br/>
+				  	<input type="radio" name='especialidad' v-radio='especialidad' value="console">console<br/>
+				  	<input type="radio" name='celular' v-radio='celular' value="celular">celular<br/>
+				  	<hr/>
+				  	<button type="submit" class="btn-warning">Registrarse</button>
+				</form>
+				<div class="respuesta"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
